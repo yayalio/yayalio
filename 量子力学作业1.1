@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{graphicx,ctex,amsmath}
+\title{费马原理证折射率}
+\author{张百成（PB12206023）}
+\date{\today}
+\begin{document}
+\maketitle
+1.证:$\delta\int n dl=0$
+
+显然在$n$相同的介质中，两点间光线轨迹必为直线，考虑光线从$n_1$介质到$n_2$介质:$A\rightarrow B$
+
+\begin{center}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{折射.png}\\
+\end{center}
+
+则$\int n dl=n_1\sqrt{a^2+x^2}+n_2\sqrt{b^2+(l-x)^2}$
+
+
+$\delta\int n dl=0$,$\frac{d(\int n dl)}{dx}=\frac{xn_1}{\sqrt{a^2+x^2}}-\frac{(l-x)n_2}{\sqrt{b^2+(l-x)^2}}=0$
+
+所以 $\frac{xn_1}{\sqrt{a^2+x^2}}=\frac{(l-x)n_2}{\sqrt{b^2+(l-x)^2}}$
+
+因为 $\sin i_1=\frac{x}{\sqrt{a^2+x^2}}$,$\sin i_2=\frac{l-x}{\sqrt{b^2+(l-x)^2}}$
+
+所以 $\frac{n_1}{\sin i_1}=\frac{n_2}{\sin n_2}$
+\end{document}
